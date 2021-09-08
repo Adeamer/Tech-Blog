@@ -41,7 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Using the routes folder
 app.use(routes);
 
-//
+//Syncing the sequeliaze DB and listening for the for port in the terminal
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

@@ -1,0 +1,12 @@
+.title {
+    font-size: 2.5rem;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    color: floralwhite;
+    background-color: darkslategray;
+}
+
+#login-btn {
+    width: 150px;
+}
