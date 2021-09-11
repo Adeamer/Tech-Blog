@@ -22,21 +22,34 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
+                  <!-- If logged in then the nav bar will show home, dashboard and logout otherwise it will just show home and login -->
+                  {{#if loggedIn}}
                   <li class="nav-item">
                     <a class="nav-link" href="#">Dashboard</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                  </li>
+                  {{else}}
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Login</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
+                  {{/if}}
                 </ul>
               </div>
             </div>
         </nav>
     </div>
+
     <div>
-        
+    {{ body }}
     </div>
+    <footer>
+      Thanks for Visiting!
+    </footer>
+
+    {{#if loggedIn}}
+    <script src="../../public/js/logout.js"></script>
+    {{/if}}
 </body>
 </html>
