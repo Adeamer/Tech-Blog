@@ -1,0 +1,10 @@
+<div class="mx-auto" style="width: 200px;">
+    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header"><a href="/post/{{id}}">{{title}}</a>Posted by {{user.username}} on {{format_date
+            created_at}}</div>
+        <span style="float:right">{{comments.length}} {{format_plural "comment" comments.length}}</span>
+        <div class="card-body">
+            <p class="card-text">{{post_text}}</p>
+        </div>
+    </div>
+</div>
