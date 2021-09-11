@@ -12,7 +12,7 @@ const seedDatabase = async () => {
         individualHooks: true,
         returning: true,
     });
-
+    
     for (const comment of commentData) {
         await Comment.create({
             ...comment,
