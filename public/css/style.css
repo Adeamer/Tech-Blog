@@ -7,3 +7,7 @@
     background-color: darkslategray;
 }
 
+.login-link {
+    display: flex;
+    justify-content: center;
+}
