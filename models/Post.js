@@ -5,17 +5,6 @@ const sequelize = require('../config/connection');
 // the Post model extends the sequelize model 
 class Post extends Model {}
 
-
-// Post model
-
-// Dependencies
-// sequelize model, datatypes, and database connection
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
-
-// the Post model extends the sequelize model 
-class Post extends Model {}
-
 // Configurating the post model
 Post.init(
     {

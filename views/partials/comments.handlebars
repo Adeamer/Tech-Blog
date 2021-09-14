@@ -1,9 +1,12 @@
-<div class="mx-auto" style="width: 200px;">
+<div class="comments">
   {{#each this}}
-  <div class="form-floating">
-    {{user.username}} on {{format_date created_at}}
-    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-      style="height: 100px">{{comment_text}}</textarea>
-    <label for="floatingTextarea2">Comments</label>
-  </div>
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="text">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
 </div>

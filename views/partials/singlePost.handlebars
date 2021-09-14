@@ -1,7 +1,7 @@
+  
 {{> post-info post}}
 
 {{#if loggedIn}}
-<div class="mx-auto" style="width: 200px;">
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
@@ -11,11 +11,10 @@
     <button type="submit">add comment</button>
   </div>
 </form>
-</div>
 {{/if}}
 
 {{> comments post.comments}}
 
 {{#if loggedIn}}
-<script src="/js/comment.js"></script>
+<script src="/public/js/comment.js"></script>
 {{/if}}

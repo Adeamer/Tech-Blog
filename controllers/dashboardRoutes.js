@@ -1,6 +1,7 @@
 // Bringing in the expres router and sequelize DB
 const router = require("express").Router();
 const sequelize = require("../config/connection");
+const withAuth = require("../utils/auth");
 
 // Bringin in the models
 const { User, Comment, Post } = require("../models");
@@ -95,7 +96,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
         });
 });
 
-// // A route to edit the logged in user
+// A route to edit the logged in user
 router.get('/edituser', withAuth, (req, res) => {
     User.findOne({
         attributes: { exclude: ['password'] },

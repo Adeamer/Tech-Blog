@@ -1,8 +1,8 @@
 // Bringing in the express router, user, post and comment routes
 const router = require('express').Router();
-const userRoutes = require('./user-routes');
-const postRoutes = require('./post-routes');
-const commentRoutes = require('./comment-routes');
+const userRoutes = require('./userRoutes');
+const postRoutes = require('./postRoutes');
+const commentRoutes = require('./commentRoutes');
 
 // Define route path for the API to use, e.g. api/users/
 router.use('/users', userRoutes);

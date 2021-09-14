@@ -1,24 +1,22 @@
-<div class="mx-auto" style="width: 200px;">
-    <article>
-        <h2>
-            Update My Information
-        </h2>
-        <form class="edit-user-form">
-            <div>
-                <label for="user-name">User Name</label>
-                <input name="user-name" type="text" value="{{user.username}}" />
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" />
-            </div>
-            <div>
-                <input type="hidden" id="user-id" name="user-id" value={{user.id}} />
-            </div>
-            <button type="submit">Update</button>
-        </form>
-        <a href="/dashboard"> &larr; Back to dashboard</a>
-    </article>
-</div>
+<article>
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+    <h2>
+        Update My Information
+    </h2>
+    <form class="edit-user-form">
+        <div>
+            <label for="user-name">User Name</label>
+            <input name="user-name" type="text" value="{{user.username}}" />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <input type="hidden" id="user-id" name="user-id" value={{user.id}} />
+        </div>
+        <button type="submit">Update</button>
+    </form>
+</article>
 
 <script src="/public/js/editUser.js"></script>

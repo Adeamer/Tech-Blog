@@ -1,17 +1,17 @@
-<div class="mx-auto" style="width: 200px;">
-  <h2 class="login-link">Login</h2>
-  <form>
-    <div class="mb-3">
-      <label class="form-label">User name</label>
-      <input type="username" placeholder="Username ">
-    </div>
-    <div class="mb-3">
-      <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
-  <a class="login-link" href="/signup">need to sign up instead?</a>
-</div>
+<form class="login-form">
+  <div>
+    <label for="user-name">username:</label>
+    <input type="text" id="username-login" />
+  </div>
+  <div>
+    <label for="password-login">password:</label>
+    <input type="password" id="password-login" />
+  </div>
+  <div>
+    <button type="submit">login</button>
+  </div>
+</form>
+
+<a href="/signup">need to sign up instead?</a>
 
 <script src="/public/js/login.js"></script>
