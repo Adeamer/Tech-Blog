@@ -23,8 +23,9 @@ async function postFormHandler(event) {
         document.location.replace('/dashboard');
     } else {
         alert(response.statusText);
+        console.log(response.statusText);
     }
 }
 
 // Event Listener for the new post submit button
-document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-post-form').addEventListener('submit', postFormHandler);
