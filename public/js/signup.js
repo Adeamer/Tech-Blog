@@ -19,7 +19,7 @@ async function signupFormHandler(event) {
             alert('Account created! Logging you in now.');
             document.location.replace('/dashboard');
         } else {
-            alert(response.statusText)
+            alert(response.statusText);
         }
     }
 }
