@@ -68,7 +68,6 @@ router.get("/edit/:id", withAuth, (req, res) => {
                 attributes: [
                     "id",
                     "comment_text",
-                    "post_text",
                     "user_id",
                     "created_at"
                 ],
@@ -89,6 +88,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
                 return;
             }
             const post = dbPostData.get({ plain: true });
+            res.render('editPost', { post, loggedIn: true });
         })
         .catch(err => {
             console.log(err);
