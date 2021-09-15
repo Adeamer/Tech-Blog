@@ -3,28 +3,21 @@
     
     
 ## Description
-    This application allows users in the software development industry to post about software issue and communicate with other developers.
+    This application allows users in the software development industry to post about software issue and communicate with other developers in a blog space. The user can create an account and then create and update their own posts and comment on someone else's post.
     
 
-    
-## Table of Contents
-1. [Installation](#Installation)
-2. [Usage](#Usage)
-3. [License](#License)
-4. [Contributing](#Contributing)
-5. [Tests](#Tests)
-6. [Questions](#Questions)
-    
-    
-    
-## Installation
-    N/A
-    
+## Packages Used
+    bycrpt 
+    connect-session-sequelize
+    dotenv
+    express
+    express-handlebars
+    express-session
+    mysql2
+    path
+    sequelize
 
-    
-## Usage
-    N/A
-    
+
 
     
 ## Licence  
@@ -32,19 +25,9 @@ MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https
     
 
     
-## Contributing
-    N/A
-    
+## Links
+Git-Hub repo: https://github.com/Adeamer/Tech-Blog 
 
-    
-## Tests
-    N/A
-    
-
-    
-## Questions
-Git-Hub: N/A  
-Link to my LinkedIn: N/A  
-For any further questions please contact me via email: N/A
+Heroku App: https://week14-tech-blog.herokuapp.com/
     
     
