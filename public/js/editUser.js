@@ -1,4 +1,4 @@
-// Function to edit a post
+// Function to edit a user
 async function editFormHandler(event) {
     event.preventDefault();
 
